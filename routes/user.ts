@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { saveUser } from '../controller/User'
+import { saveUser } from '../controller/user'
 
 const userRouter = Router()
 

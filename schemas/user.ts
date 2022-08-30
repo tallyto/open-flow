@@ -5,9 +5,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    user: {
+    username: {
         type: String,
         required: true
+    },
+    roles: {
+        type: Array,
+        default: []
     },
     password: {
         type: String,

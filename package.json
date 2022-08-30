@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only server.ts",
+    "debug": "ts-node-dev --transpile-only --respawn --inspect=4321 --project tsconfig.json server.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +21,10 @@
     "express": "^4.18.1",
     "helmet": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
     "mongoose": "^6.5.3",
     "morgan": "^1.10.0",
+    "uuid": "^8.3.2",
     "ws": "^8.8.1"
   },
   "devDependencies": {
@@ -29,6 +32,7 @@
     "@types/cors": "^2.8.12",
     "@types/jsonwebtoken": "^8.5.9",
     "@types/morgan": "^1.9.3",
+    "@types/uuid": "^8.3.4",
     "@types/ws": "^8.5.3",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.2"
